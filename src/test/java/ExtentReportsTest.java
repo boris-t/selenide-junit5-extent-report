@@ -12,7 +12,8 @@ class ExtentReportsTest {
     @Test
     @DisplayName("Open Google URL")
     void openUrl() {
-        open(baseUrl);
+        String url = "http://google.com";
+        open(url);
     }
 
     @Test
@@ -24,7 +25,7 @@ class ExtentReportsTest {
     }
 
     @Test
-    @DisplayName("Verify Selinide Home Page")
+    @DisplayName("Verify Selenide Home Page")
     void goToSelenidePage() {
         $$(".g h3").get(0).click();
         $("div[class='short wiki'] h3").shouldHave(text("ЧТО ТАКОЕ SELENIDE?"));

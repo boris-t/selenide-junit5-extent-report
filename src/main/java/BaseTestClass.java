@@ -18,7 +18,7 @@ public class BaseTestClass implements BeforeAllCallback, BeforeTestExecutionCall
         reports = new ExtentReports();
         reports.attachReporter(htmlReporter);
         Configuration.startMaximized = true;
-        Configuration.baseUrl = "https://google.com";
+        Configuration.baseUrl = "http://google.com";
     }
 
     @Override

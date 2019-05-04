@@ -1,6 +1,6 @@
 # Selenide Junit5  Extent Report
 
-Simple google test, using gradle, junit5, generating ExtentReports
+Simple google test, using Selenide, gradle, junit5, generating ExtentReports
 
 ## How to use:
 
@@ -13,6 +13,8 @@ Simple google test, using gradle, junit5, generating ExtentReports
 `@DisplayName` - test step name
 
 **BaseTestClass** - main test class containing configuration for tests and reports
+
+Every test class should have extension: `@ExtendWith(BaseTestClass.class)`
 
 ## Documentation:
 

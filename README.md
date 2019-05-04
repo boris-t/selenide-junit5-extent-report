@@ -14,6 +14,8 @@ Simple google test, using Selenide, gradle, junit5, generating ExtentReports
 
 **BaseTestClass** - main test class containing configuration for tests and reports
 
+Every test class should have extension: `@ExtendWith(BaseTestClass.class)`
+
 ## Documentation:
 
 [ExtentReports](http://extentreports.com/docs/versions/3/java/)

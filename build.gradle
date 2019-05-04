@@ -1,0 +1,34 @@
+plugins {
+    id 'java'
+}
+
+group 'SelenideExtentReports'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compileOnly 'org.junit.jupiter:junit-jupiter-api:5.4.0'
+    compileOnly 'com.aventstack:extentreports:3.1.5'
+
+    testCompileOnly 'junit:junit:4.12'
+    testRuntimeOnly 'org.junit.vintage:junit-vintage-engine:5.4.0'
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.4.0'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.4.0'
+    testCompile 'com.codeborne:selenide:5.2.2'
+    testCompile 'com.aventstack:extentreports:3.1.5'
+}
+
+test {
+
+    useJUnitPlatform()
+    systemProperties = [
+            'file.encoding': 'UTF-8',
+            'selenide.browser': 'chrome',
+    ]
+}
+

@@ -5,7 +5,7 @@ Simple google test, using Selenide, gradle, junit5, generating ExtentReports
 ## How to use:
 
 
-*  clone project: `git clone https://git.senla.eu/boris_tupik/selenide-junit5-extent-report.git`
+*  clone project: `git clone https://github.com/boris-t/selenide-junit5-extent-report.git`
 *  go to project's dir
 *  run command `./gradlew test`
 *  see reports in **/test-output folder** (can be changed)

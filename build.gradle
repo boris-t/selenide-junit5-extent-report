@@ -14,10 +14,10 @@ repositories {
 dependencies {
     compileOnly 'org.junit.jupiter:junit-jupiter-api:5.4.2'
     compileOnly 'com.aventstack:extentreports:3.1.5'
-    compileOnly 'com.codeborne:selenide:5.2.2'
+    compileOnly 'com.codeborne:selenide:5.3.1'
 
     testImplementation('org.junit.jupiter:junit-jupiter:5.4.2')
-    testCompile 'com.codeborne:selenide:5.2.2'
+    testCompile 'com.codeborne:selenide:5.3.1'
     testCompile 'com.aventstack:extentreports:3.1.5'
 }
 
